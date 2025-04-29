@@ -1,44 +1,38 @@
-# Instructions for Pushing to GitHub
+# GitHub Repository Setup
 
-Follow these steps to push your code to GitHub:
+This document describes how the GitHub repository for this project was set up.
 
-## 1. Create a new GitHub repository
+## Repository Information
 
-1. Go to [GitHub](https://github.com/) and sign in to your account
-2. Click on the "+" icon in the top-right corner and select "New repository"
-3. Enter a name for your repository (e.g., "spring-ai-mcp-weather-stdio-server")
-4. Optionally add a description
-5. Choose whether the repository should be public or private
-6. Do NOT initialize the repository with a README, .gitignore, or license (since we already have these files locally)
-7. Click "Create repository"
+- **Repository Name**: my-mcp-stdio-server
+- **Owner**: cloud4java
+- **URL**: https://github.com/cloud4java/my-mcp-stdio-server
+- **Visibility**: Public
+- **Description**: Spring AI MCP Weather STDIO Server - A Spring Boot starter project demonstrating how to build a Model Context Protocol (MCP) server that provides weather-related tools
 
-## 2. Add the GitHub repository as a remote
+## How the Repository Was Created
 
-After creating the repository, GitHub will show you commands to use. Copy the HTTPS or SSH URL of your repository and run the following command in your terminal:
+The repository was created using GitHub CLI with the following command:
 
 ```
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME.git
+gh repo create my-mcp-stdio-server --public --description "Spring AI MCP Weather STDIO Server - A Spring Boot starter project demonstrating how to build a Model Context Protocol (MCP) server that provides weather-related tools" --source=. --remote=origin
 ```
 
-Replace `YOUR-USERNAME` and `YOUR-REPOSITORY-NAME` with your GitHub username and the name you gave to your repository.
+## How the Code Was Pushed
 
-## 3. Push your code to GitHub
-
-Push your code to the GitHub repository:
+The local repository was pushed to GitHub with:
 
 ```
 git push -u origin master
 ```
 
-This will push your local master branch to the remote repository and set up tracking.
+## Accessing the Repository
 
-## 4. Verify the push
-
-1. Go to your GitHub repository in a web browser
-2. You should see all your files and commit history
+You can access the repository at: https://github.com/cloud4java/my-mcp-stdio-server
 
 ## Additional Information
 
-- If you're using SSH for GitHub authentication, use the SSH URL instead of HTTPS
-- If you encounter authentication issues with HTTPS, you may need to use a personal access token instead of your password
-- For more information, refer to [GitHub's documentation](https://docs.github.com/en/get-started/quickstart/create-a-repo)
+- The repository contains all the source code for the Spring AI MCP Weather STDIO Server
+- The project demonstrates how to build a Model Context Protocol (MCP) server that provides weather-related tools using the National Weather Service API
+- For more information about GitHub CLI, see [GitHub CLI documentation](https://cli.github.com/manual/)
+- For more information about Git commands, see [Git documentation](https://git-scm.com/doc)
