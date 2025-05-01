@@ -26,7 +26,6 @@ public class WeatherService {
 
 	private static final String BASE_URL = "https://api.weatherstack.com/current";
 
-//	@Value("${app.weather.apikey}")
 	private String apiKey = System.getenv("WEATHER_API_KEY");
 
 	private final RestClient restClient;
